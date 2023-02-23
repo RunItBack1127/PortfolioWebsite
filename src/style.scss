@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+#app {
+    --site-font-1: 'Europa Grotesk', sans-serif;
+    --site-letter-spacing: 0.1rem;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--site-font-1);
+    font-size: 16px;
+    letter-spacing: var(--site-letter-spacing);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+button {
+    font-family: var(--site-font-1);
+    letter-spacing: var(--site-letter-spacing);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Europa Grotesk';
+    src: url('/EuropaGrotesk.otf');
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('/Coolvetica.otf');
+}
