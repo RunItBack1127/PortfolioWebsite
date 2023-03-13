@@ -36,7 +36,7 @@ export default defineComponent({
             display: flex;
             flex-direction: column;
             text-align: center;
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             letter-spacing: 0.1rem;
             padding: 15px 5px;
         }

@@ -87,7 +87,7 @@ header {
             align-items: center;
 
             button {
-                font-size: 1.25rem;
+                font-size: 1.35rem;
                 letter-spacing: 0.1rem;
                 padding: 20px;
             }

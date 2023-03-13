@@ -2,7 +2,7 @@
     <section class="IntroContainer">
         <div class="IntroContent">
             <div class="TextContainer">
-                <h1>Hi, I'm Weston! <span>👋</span></h1>
+                <h1>Hi, I'm Weston!</h1>
                 <h2>I'm an experienced full-stack developer based in the Research Triangle Park. Yes, I can fix your printer.</h2>
                 <nav>
                     <button>About Me</button>
@@ -15,8 +15,11 @@
                 </div>
             </div>
         </div>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#111111" fill-opacity="1" d="M0,32L80,26.7C160,21,320,11,480,48C640,85,800,171,960,181.3C1120,192,1280,128,1360,96L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>    
-     -->
+        <aside>
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M480 712 240 472l43-43 197 197 197-197 43 43-240 240Z"/></svg>
+            </button>
+        </aside>
     </section>
 </template>
 
@@ -37,28 +40,40 @@ section {
         width: 75%;
         margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 450px;
+        gap: 150px;
+        transform: translateY(-25px);
 
         .TextContainer {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            max-width: 600px;
             
             h1 {
+                position: relative;
                 font-family: 'Coolvetica', sans-serif;
                 font-size: 5rem;
                 margin-bottom: 20px;
 
-                span {
-                    display: inline-block;
-                    font-size: 0.5em;
-                    transform: translateY(-25%);
-                }
+                // span {
+                //     display: inline-block;
+                //     font-size: 0.5em;
+                //     transform: translateY(-25%);
+                // }
+            }
+
+            h1::after {
+                content: '👋';
+                position: absolute;
+                font-size: 0.5em;
+                top: 25%;
+                transform: translateX(20px);
             }
 
             h2 {
-                font-size: 2rem;
+                font-size: 1.75rem;
                 font-weight: 100;
                 letter-spacing: 0.1rem;
                 line-height: 2.5rem;
@@ -100,6 +115,35 @@ section {
                     clip-path: circle();
                 }
             }
+        }
+    }
+
+    aside {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        bottom: 50px;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+            transition: transform 200ms ease;
+
+            svg {
+                opacity: 0.5;
+                pointer-events: none;
+            }
+        }
+
+        button:hover {
+            transform: translateY(15px);
         }
     }
 }
