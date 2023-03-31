@@ -3,8 +3,8 @@
         <div class="AboutMeContent">
             <SectionHeader title="Who Am I" />
             <section class="QuoteContainer">
-                <h2>Runner. Trumpet player. Programmer.</h2>
-                <h3>🏃🎺💻</h3>
+                <!-- <h2>Runner. Trumpet player. Programmer.</h2> -->
+                <!-- <h3>🏃🎺💻</h3> -->
             </section>
             <section class="PhotoContainer">
                 <img src="/TrumpetHeadshot.jpg" />
@@ -44,15 +44,16 @@ section.AboutMeContainer {
             font-size: 2.25rem;
             letter-spacing: 0.5rem;
             font-weight: 200;
-            margin-bottom: 30px;
+            margin-bottom: 75px;
             opacity: 0.55;
         }
 
+        /*
         h3 {
             font-size: 2.5rem;
             letter-spacing: 4rem;
             margin-bottom: 100px;
-        }
+        } */
     }
 
     .PhotoContainer {

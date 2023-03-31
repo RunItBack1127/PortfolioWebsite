@@ -42,7 +42,7 @@ section {
         display: grid;
         grid-template-columns: 1fr 450px;
         gap: 150px;
-        transform: translateY(-25px);
+        // transform: translateY(-25px);
 
         .TextContainer {
             display: flex;
@@ -56,6 +56,7 @@ section {
                 font-family: 'Coolvetica', sans-serif;
                 font-size: 5rem;
                 margin-bottom: 20px;
+                white-space: nowrap;
 
                 // span {
                 //     display: inline-block;
@@ -123,8 +124,9 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100vw;
-        bottom: 50px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
 
         button {
             display: flex;
@@ -144,6 +146,15 @@ section {
 
         button:hover {
             transform: translateY(15px);
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    section {
+
+        aside {
+            bottom: 50px;
         }
     }
 }

@@ -99,7 +99,7 @@ header {
             button#ContactInfo {
                 background: #000;
                 color: #fff;
-                font-weight: 600;
+                // font-weight: 600;
                 padding: 15px 35px;
                 border-radius: 10px;
             }

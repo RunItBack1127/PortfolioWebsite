@@ -14,6 +14,8 @@ html, body {
     --site-letter-spacing: 0.1rem;
     width: 100vw;
     height: 100vh;
+    margin: auto;
+    max-width: 1650px;
     font-family: var(--site-font-1);
     letter-spacing: var(--site-letter-spacing);
 }
